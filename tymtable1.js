@@ -1,191 +1,108 @@
-const subject_allocation = {
-  csa: {
+const subjectAllocation = {
+  cs: {
     cs_302: {
-      course_name: "DAA",
+      courseName: "DAA",
       credit: 4,
       lecture: 3,
       tutorial: 1,
       practical: 0,
       remHour: 3,
-      faculty_name_A: ["priya k v"],
-      faculty_name_B: ["megha k v"],
+      facultyNameA: ["priya k v"],
+      facultyNameB: ["megha k v"],
     },
     cs_304: {
-      course_name: "CD",
+      courseName: "CD",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["divya r"],
+      facultyNameA: ["divya r"],
+      facultyNameB: ["sreetha e s"],
     },
     cs_306: {
-      course_name: "CN",
+      courseName: "CN",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["scaria alex"],
+      facultyNameA: ["scaria alex"],
+      facultyNameB: ["deepa devassy"],
     },
     cs_308: {
-      course_name: "software engineering",
+      courseName: "software engineering",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["willson joseph"],
+      facultyNameA: ["wilson joseph"],
+      facultyNameB: ["satheesh kumar"],
     },
     hs_300: {
-      course_name: "PM",
+      courseName: "PM",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["roshni menon"],
+      facultyNameA: ["roshni menon"],
+      facultyNameB: ["princy t d"],
     },
     cs_364: {
-      course_name: "mobile computing",
+      courseName: "mobile computing",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["shyam krishna"],
+      facultyNameA: ["shyam krishna"],
+      facultyNameB: ["shyam krishna"],
     },
     cs_368: {
-      course_name: "web technologies",
+      courseName: "web technologies",
       credit: 3,
       lecture: 3,
       tutorial: 0,
       practical: 0,
       remHour: 3,
-      faculty_name: ["linnet tomy"],
+      facultyNameA: ["linnet tomy"],
+      facultyNameB: ["linnet tomy"],
     },
     cs_332: {
-      course_name: "microprocessor lab",
-      credit: 1,
-      lecture: 0,
-      tutorial: 0,
-      practical: 6,
-      periodLength: 3, 
-      faculty_name: ["uma es"],
-    },
-    cs_334: {
-      course_name: "network programming lab",
+      courseName: "microprocessor lab",
       credit: 1,
       lecture: 0,
       tutorial: 0,
       practical: 6,
       periodLength: 3,
-      faculty_name: ["livya george", "satheesh kumar", "wilson joseph"],
+      facultyNameA: ["uma es"],
+      facultyNameB: ["scaria alex"],
+    },
+    cs_334: {
+      courseName: "network programming lab",
+      credit: 1,
+      lecture: 0,
+      tutorial: 0,
+      practical: 6,
+      periodLength: 3,
+      facultyNameA: ["livya george", "satheesh kumar", "wilson joseph"],
+      facultyNameB: ["deepa devassy", "princy t d"],
     },
     cs_352: {
-      course_name: "comprehensive exam",
+      courseName: "comprehensive exam",
       credit: 2,
       lecture: 0,
       tutorial: 1,
       practical: 1,
-      faculty_name: ["sundar r", "scaria alex"],
-    },
-  },
-  csb: {
-    cs_302: {
-      course_name: "DAA",
-      credit: 4,
-      lecture: 3,
-      tutorial: 1,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["megha k v"],
-    },
-    cs_304: {
-      course_name: "CD",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["sreetha es"],
-    },
-    cs_306: {
-      course_name: "CN",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["deepa devassy"],
-    },
-    cs_308: {
-      course_name: "software engineering",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["satheesh kumar"],
-    },
-    hs_300: {
-      course_name: "PM",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["princy t d"],
-    },
-    cs_364: {
-      course_name: "mobile computing",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["shyam krishna"],
-    },
-    cs_368: {
-      course_name: "web technologies",
-      credit: 3,
-      lecture: 3,
-      tutorial: 0,
-      practical: 0,
-      remHour: 3,
-      faculty_name: ["linnet tomy"],
-    },
-    cs_332: {
-      course_name: "microprocessor lab",
-      credit: 1,
-      lecture: 0,
-      tutorial: 0,
-      practical: 6,
-      periodLength: 3,
-      faculty_name: ["scaria alex"],
-    },
-    cs_334: {
-      course_name: "network programming lab",
-      credit: 1,
-      lecture: 0,
-      tutorial: 0,
-      practical: 6,
-      periodLength: 3,
-      faculty_name: ["deepa devassy", "princy t d"],
-    },
-    cs_352: {
-      course_name: "comprehensive exam",
-      credit: 2,
-      lecture: 0,
-      tutorial: 1,
-      practical: 1,
-      faculty_name: ["sreetha e s", "ann rija paul"],
+      facultyNameA: ["sundar r", "scaria alex"],
+      facultyNameB: ["sreetha e s", "ann rija paul"],
     },
   },
 };
 
-
-const teacher_tymtable = {
+const teachersTymTable = {
   "sreetha e s": {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
@@ -200,7 +117,14 @@ const teacher_tymtable = {
     thursday: [0, 0, 0, 0, 0, 0],
     friday: [0, 0, 0, 0, 0, 0],
   },
-  "deepa devassy": {
+  "scaria alex": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
+  "sundar r": {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
     wednesday: [0, 0, 0, 0, 0, 0],
@@ -214,7 +138,35 @@ const teacher_tymtable = {
     thursday: [0, 0, 0, 0, 0, 0],
     friday: [0, 0, 0, 0, 0, 0],
   },
-  "scaria alex": {
+  "deepa devassy": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
+  "wilson joseph": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
+  "satheesh kumar": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
+  "livya george": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
+  "uma es": {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
     wednesday: [0, 0, 0, 0, 0, 0],
@@ -235,48 +187,6 @@ const teacher_tymtable = {
     thursday: [0, 0, 0, 0, 0, 0],
     friday: [0, 0, 0, 0, 0, 0],
   },
-  "satheesh kumar": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
-  "megha k v": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
-  "sundar r": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
-  "livya george": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
-  "wilson joseph": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
-  "uma es": {
-    monday: [0, 0, 0, 0, 0, 0],
-    tuesday: [0, 0, 0, 0, 0, 0],
-    wednesday: [0, 0, 0, 0, 0, 0],
-    thursday: [0, 0, 0, 0, 0, 0],
-    friday: [0, 0, 0, 0, 0, 0],
-  },
   "roshni menon": {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
@@ -291,6 +201,13 @@ const teacher_tymtable = {
     thursday: [0, 0, 0, 0, 0, 0],
     friday: [0, 0, 0, 0, 0, 0],
   },
+  "megha k v": {
+    monday: [0, 0, 0, 0, 0, 0],
+    tuesday: [0, 0, 0, 0, 0, 0],
+    wednesday: [0, 0, 0, 0, 0, 0],
+    thursday: [0, 0, 0, 0, 0, 0],
+    friday: [0, 0, 0, 0, 0, 0],
+  },
   "priya k v": {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
@@ -298,53 +215,81 @@ const teacher_tymtable = {
     thursday: [0, 0, 0, 0, 0, 0],
     friday: [0, 0, 0, 0, 0, 0],
   },
-}
+};
 
-const tymtable = {
+const tymTable = {
   csa: {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
     wednesday: [0, 0, 0, 0, 0, 0],
     thursday: [1, 1, 1, 0, 0, 0],
-    friday: [1, 1, 1, 0, 0, 0]
+    friday: [1, 1, 1, 0, 0, 0],
   },
   csb: {
     monday: [0, 0, 0, 0, 0, 0],
     tuesday: [0, 0, 0, 0, 0, 0],
     wednesday: [0, 0, 0, 0, 0, 0],
     thursday: [0, 0, 0, 1, 1, 1],
-    friday: [0, 0, 0, 1, 1, 1]
-  }
+    friday: [0, 0, 0, 1, 1, 1],
+  },
+};
+
+const subjects = [];
+for (let s in subjectAllocation.cs) {
+  subjects.push(s);
 }
 
-let tut = [];
-let tutNo = 0;
-for( var key in subject_allocation) {
-  for(var i in subject_allocation[key]) {
-    if(subject_allocation[key][i].tutorial > 0) {
-      tut.push(subject_allocation[key][i].course_name)
-      tutNo += 1;
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
     }
   }
-  break;
-}
-console.log(tut, tutNo);
-
-let subjects = [];
-for(var sub in subject_allocation.csa) {
-  subjects.push(sub);
 }
 
-console.log(subjects);
-j = 0
-for(var cls in tymtable) {
-  for(var day in tymtable[cls]) {
-    const periods = tymtable[cls][day];
-    console.log(periods);
-    for(let i  = 0; i < periods.length; i++) {
-      if(periods[i] == 0) {
-         
+function slotFree(sub, cls, i, day) {
+  //console.log("im at slot free");
+  const obj = subjectAllocation.cs[subjects[sub]];
+  let faculty = "";
+  if (obj.hasOwnProperty("remHour"))
+    if (cls === "csa") {
+      faculty = obj.facultyNameA;
+    } else {
+      faculty = obj.facultyNameB;
+    }
+  else return 0;
+
+  const tym = teachersTymTable[faculty][day];
+  //console.log(cls, day, faculty.toString());
+  if (tym[i] == 0) return faculty.toString();
+  else return 0;
+}
+
+let sub = 0;
+for (var cls in tymTable) {
+  for (var day in tymTable[cls]) {
+    const periods = tymTable[cls][day];
+
+    for (let i = 0; i < periods.length; ) {
+      const slotFreeData = slotFree(sub, cls, i, day);
+      if (periods[i] === 0 && slotFreeData !== 0) {
+        periods[i] = slotFreeData;
+        i++;
       }
+      if(periods[i] !== 0) i++;
+      sub++;
+      if (sub == subjects.length) sub = 0;
+      //sleep(5000);
+      //console.log(i, sub, day, subjects.length);
     }
+    
+    //sleep(5000);
+
+    tymTable[cls][day] = periods;
+    //console.log(tymTable[cls][day], cls);
   }
 }
+
+console.log(tymTable.csa);
+console.log(tymTable.csb);
